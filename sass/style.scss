@@ -1,0 +1,193 @@
+$h1-fontsize: 2.28rem !default;
+
+@import "vendor/Font-Awesome/font-awesome";
+@import "vendor/owlcarousel/owl.carousel";
+@import "vendor/owlcarousel/owl.theme.default";
+@import "vendor/materialize/materialize";
+
+$custom-navbar-font-color: #7f7f7f !default;
+
+h1 {
+  font-size: 2.28rem;
+  margin: 1.14rem 0 0.912rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+@media #{$medium-and-up} {
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+}
+
+.small {
+  font-size: 75%;
+}
+
+ol {
+  padding-left: 1em;
+  margin-top: 0;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+nav {
+  ul {
+    li {
+      &.active {
+        background-color: transparent;
+
+        a {
+          box-shadow: inset 0 -3px 0 0 #3f51b5;
+        }
+      }
+    }
+
+    a {
+      color: $custom-navbar-font-color;
+
+      &:hover {
+
+      }
+    }
+  }
+
+  .button-collapse {
+    color: $custom-navbar-font-color;
+  }
+
+  .profile {
+    img {
+      display: block;
+      height: 64px;
+      padding: 8px 0;
+    }
+  }
+}
+
+.side-nav {
+  li {
+    > a.profile {
+      img {
+        height: 48px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.brand-logo {
+  font-weight: bold;
+  padding: 0 11px !important;
+  font-size: 3.1rem !important;
+}
+
+.section.header {
+  padding: 2.25em 0;
+}
+
+.leaders {
+  .collapsible {
+    border: none;
+    padding: 0;
+  }
+
+  .collapsible-header {
+    border: none;
+    padding: 0;
+    display: inline-block;
+    line-height: 1.2;
+    min-height: 0;
+    margin-top: 1em;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.25);
+  }
+
+  .collapsible-body {
+    border: none;
+    padding: 1em 0 0;
+  }
+
+  .card {
+    margin-left: 2px;
+    margin-right: 2px;
+
+    .card-title {
+      font-size: 1rem;
+    }
+  }
+
+  .card-profile {
+    .profile-avatar {
+      float: left;
+      margin-right: 10px;
+
+      img {
+        display: block;
+        height: 42px;
+        width: auto;
+      }
+    }
+
+    .profile-name {
+      overflow: hidden;
+
+      time {
+        display: block;
+      }
+    }
+
+    .profile-comment {
+      margin-top: 10px;
+    }
+  }
+
+  .card-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .2;
+    background: #000;
+  }
+
+  .card-image {
+
+    img {
+      border-radius: 0;
+    }
+    .card-title {
+      z-index: 2;
+    }
+  }
+
+  .card-content {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        i.material-icons {
+          vertical-align: text-top;
+        }
+      }
+    }
+  }
+}
+
+.rules {
+  .divider {
+    margin-bottom: 10px;
+  }
+}
